@@ -1,19 +1,15 @@
-package com.purusottam.instagram.model;
+package com.purusottam.instagram.beans;
 
+import com.purusottam.instagram.model.Profile;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
-
-@Document
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-public class Profile {
-
+public class ProfileBean {
     public enum ProfileType {
         PROFILE("Private"), PUBLIC("Public");
         private String label;
@@ -25,8 +21,6 @@ public class Profile {
         }
     }
 
-    @Id
-    private String profileId;
     private String userName;
     private String firstName;
     private String lastName;
@@ -35,11 +29,9 @@ public class Profile {
     private String imageUrl;
     private String description;
     private Date dob;
-    private ProfileType profileType;
+    private Profile.ProfileType profileType;
     private Long numberOfPost;
     private Long numberOfFollowers;
     private Long numberOfFollowing;
     private Boolean active;
-    // FIXME has to be encripted
-    private String password;
 }
