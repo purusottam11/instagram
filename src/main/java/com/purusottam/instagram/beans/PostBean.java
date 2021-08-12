@@ -1,21 +1,17 @@
-package com.purusottam.instagram.model;
+package com.purusottam.instagram.beans;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.Instant;
 import java.util.List;
 
-@Document
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-public class Post {
-    @Id
-    private String postId;
+public class PostBean {
+
     private String description;
     private List<String> imageUrl;
     private List<String> tags;
@@ -26,4 +22,5 @@ public class Post {
     private List<String> taggedProfile;
     // Optional
     private String location;
+
 }
