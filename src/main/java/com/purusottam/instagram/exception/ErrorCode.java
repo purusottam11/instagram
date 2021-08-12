@@ -3,7 +3,9 @@ package com.purusottam.instagram.exception;
 public enum ErrorCode {
     PROFILE_NOT_FOUND("Profile not found !!", 404),
     PROFILE_IS_EXIST("Profile is exist !!", 400),
-    EMAIL_ID_EXISTS("EmailId is exists !!",400);
+    EMAIL_ID_EXISTS("EmailId is exists !!", 400),
+    POST_NOT_FOUND("Post not found !!", 404),
+    POST_ALREADY_EXISTS("Post is already exist !!", 400);
     private String message;
     private int errorCode;
 
