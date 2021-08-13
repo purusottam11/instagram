@@ -14,5 +14,5 @@ public class LikeSummery {
     @Id
     private String likeSummaryId;
     private String activityId;
-    private Long count;
+    private Integer count;
 }
