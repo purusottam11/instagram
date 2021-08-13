@@ -5,7 +5,9 @@ public enum ErrorCode {
     PROFILE_IS_EXIST("Profile is exist !!", 400),
     EMAIL_ID_EXISTS("EmailId is exists !!", 400),
     POST_NOT_FOUND("Post not found !!", 404),
-    POST_ALREADY_EXISTS("Post is already exist !!", 400);
+    POST_ALREADY_EXISTS("Post is already exist !!", 400),
+    LIKE_iS_EXIST("Like is already exist !!", 400),
+    LIKE_NOT_FOUND("Like not found !!", 404);
     private String message;
     private int errorCode;
 
