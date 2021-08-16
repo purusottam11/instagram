@@ -7,7 +7,8 @@ public enum ErrorCode {
     POST_NOT_FOUND("Post not found !!", 404),
     POST_ALREADY_EXISTS("Post is already exist !!", 400),
     LIKE_iS_EXIST("Like is already exist !!", 400),
-    LIKE_NOT_FOUND("Like not found !!", 404);
+    LIKE_NOT_FOUND("Like not found !!", 404),
+    COMMENT_NOT_FOUND("Comment not found !!", 404);
     private String message;
     private int errorCode;
 
